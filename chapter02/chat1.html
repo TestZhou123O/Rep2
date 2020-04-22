@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>群聊</title>
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="/app.js"></script>
+</head>
+<body>
+<div>
+    <label>请输入用户名</label>
+    <input type="text" id="name" placeholder="用户名">
+</div>
+<div>
+    <button type="button" id="connect">连接</button>
+    <button type="button" id="disconnect" disabled="disabled">断开连接</button>
+</div>
+<div id="chat" style="display: none;">
+    <div>
+        <label>请输入聊天的内容</label>
+        <input type="text" id="content" placeholder="聊天内容">
+        <button type="button" id="send">发送</button>
+    </div>
+    <div id="greetings">
+        <label id="covercation" style="display: none;">群聊中.....</label>
+    </div>
+</div>
+</body>
+</html>
